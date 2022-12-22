@@ -28,6 +28,21 @@ function updateDateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
+  // PARIS
+
+  parisElement = document.querySelector("#paris");
+  if (parisElement) {
+    parisDateElement = parisElement.querySelector(".date");
+    parisTimeElement = parisElement.querySelector(".time");
+
+    parisTime = moment().tz("Europe/Paris");
+
+    parisDateElement.innerHTML = parisTime.format("MMMM Do YYYY");
+    parisTimeElement.innerHTML = parisTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 // CHANGE CITY FROM DROPDOWN
