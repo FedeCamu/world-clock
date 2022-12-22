@@ -50,7 +50,8 @@ function updateCity(event) {
             "h:mm:ss [<small>]A[</small>]"
           )}</div>
         
-         </div>`;
+         </div>
+         <a href="/">Back to cities list</a>`;
 }
 
 updateDateTime();
